@@ -3,4 +3,4 @@ A deep learning model that integrates path aggregation strategies and prototype-
 
 Below is the algorithm flowchart:
 
-![Algorithm-Flowchart](https://github.com/lucky0172/DPGNNPAM/blob/main/result/Algorithm%20Flowchart.png)
+![Algorithm-Flowchart](https://github.com/lucky0172/DPGNNPAM/blob/91751cddbee278d013b07a8ef5d63052362e75b5/result/Algorithm.png)

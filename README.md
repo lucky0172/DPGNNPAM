@@ -20,14 +20,15 @@ Below is the algorithm flowchart:
 
 ### Step 1: Install PyTorch
 
- First, install **PyTorch** based on your system and hardware. Visit [https://pytorch.org/get-started/locally/][https://pytorch.org/get-started/locally/] for the correct command. 
+ First, install **PyTorch** based on your system and hardware. Visit [Previous PyTorch Versions](https://pytorch.org/get-started/previous-versions/) for the correct command. 
 
 For example, for **CUDA 11.8**: 
 
 #### Using pip
 
 ```bash 
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# CUDA 11.8
+pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
 ```
 
 #### Or using conda

@@ -57,8 +57,8 @@ Use the `main.py` script to train DPGNNPAM with customizable hyperparameters:
 
 ```
 python main.py \ 
-	--node_file_path rice \
-	--edge_file_path \
+	--node_file_path node_file \
+	--edge_file_path edge_file \
 	--encoder DPGNNPAM \
 	--runs 10 \
     --dropout 0.5 \

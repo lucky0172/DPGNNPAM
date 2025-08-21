@@ -30,7 +30,7 @@ For example, for **CUDA 11.8**:
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 
-####Or using conda
+#### Or using conda
 
 ```
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
@@ -44,7 +44,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 pip install torch-geometric -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
 ```
 
-###Step 3: Install Other Dependencies
+### Step 3: Install Other Dependencie
 
 ```
 pip install numpy pandas scikit-learn matplotlib seaborn tqdm

@@ -4,3 +4,75 @@ A deep learning model that integrates path aggregation strategies and prototype-
 Below is the algorithm flowchart:
 
 ![Algorithm-Flowchart](https://github.com/lucky0172/DPGNNPAM/blob/91751cddbee278d013b07a8ef5d63052362e75b5/result/Algorithm.png)
+
+
+
+## 💻 Installation
+
+ To run DPGNNPAM, you need to set up a Python environment with the following core dependencies:
+
+- Python ≥ 3.8 
+- PyTorch (with optional CUDA support)
+- PyTorch Geometric (PyG) for graph neural networks
+- NumPy, Pandas, Scikit-learn for data processing
+
+ We recommend using `conda` and `pip` to manage the environment.
+
+### Step 1: Install PyTorch
+
+ First, install **PyTorch** based on your system and hardware. Visit [https://pytorch.org/get-started/locally/][https://pytorch.org/get-started/locally/] for the correct command. 
+
+For example, for **CUDA 11.8**: 
+
+#### Using pip
+
+```bash 
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+
+####Or using conda
+
+```
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+```
+
+### Step 2: Install PyTorch Geometric and Related Packages
+
+```
+# Replace {TORCH_VERSION} with your PyTorch version, e.g., torch-2.0.0
+# Replace +cu118 with +cpu if using CPU-only
+pip install torch-geometric -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+```
+
+###Step 3: Install Other Dependencies
+
+```
+pip install numpy pandas scikit-learn matplotlib seaborn tqdm
+```
+
+## 🚀 Training Process
+
+Use the `main.py` script to train DPGNNPAM with customizable hyperparameters:
+
+```
+python main.py \ 
+	--node_file_path rice \
+	--edge_file_path \
+	--encoder DPGNNPAM \
+	--runs 10 \
+    --dropout 0.5 \
+    --lr 0.01 \ 
+    --weight_decay 5e-4 \ 
+    --epochs 200 \ 
+```
+
+
+
+
+
+
+
+
+
+
+

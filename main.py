@@ -160,10 +160,10 @@ if __name__ == "__main__":
     parser.add_argument('--node_file_path', type=str, default="./data/gene_end1.csv")
     parser.add_argument('--edge_file_path', type=str, default="./data/ppi_end1.txt")
     parser.add_argument('--shuffle', type=str, default='eval_total') 
-    parser.add_argument('--encoder', type=str, default='Random') 
+    parser.add_argument('--encoder', type=str, default='DPGNNPAM') 
     parser.add_argument('--num_heads', type=int, default=2)
     parser.add_argument('--episodic_samp', type=float, default=1.0) 
-    parser.add_argument('--runs', type=int, default=5) 
+    parser.add_argument('--runs', type=int, default=10) 
     # parser.add_argument('--label_prop', type=str, default='yes') 
     # parser.add_argument('--eta', type=float, default=1.0)  
 

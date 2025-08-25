@@ -45,7 +45,7 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 pip install torch-geometric -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
 ```
 
-### Step 3: Install Other Dependencie
+### Step 3: Install Other Dependencies
 
 ```
 pip install numpy pandas scikit-learn matplotlib seaborn tqdm

@@ -64,12 +64,19 @@ python main.py \
     --dropout 0.5 \
     --lr 0.01 \ 
     --weight_decay 5e-4 \ 
-    --epochs 200 \ 
+    --epochs 200
 ```
 
+Parameter Description
 
-
-
+- `--node_file_path`: Path to node feature file (replace with your node data file)
+- `--edge_file_path`: Path to edge relation file (replace with your edge data file)
+- `--encoder`: Encoder type, choose from: DPGNNPAM, GCN, GAT, GAE
+- `--runs`: Number of experimental repetitions, 10 runs for averaged results
+- `--dropout`: Dropout rate, set to 0.5 to prevent overfitting
+- `--lr`: Learning rate, set to 0.01
+- `--weight_decay`: Weight decay, L2 regularization coefficient 5e-4
+- `--epochs`: Training epochs, 200 epochs
 
 
 

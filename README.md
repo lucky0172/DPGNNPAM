@@ -78,7 +78,10 @@ Parameter Description
 - `--weight_decay`: Weight decay, L2 regularization coefficient 5e-4
 - `--epochs`: Training epochs, 200 epochs
 
+## 💾  Pretrained Weights
 
+To facilitate quick testing or reproduction of results, we also provide **pretrained model weights**.
+ You can find these weight files under the `weights/` directory.
 
 
 

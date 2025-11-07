@@ -81,9 +81,11 @@ Parameter Description
 ## 💾  Pretrained Weights
 
 To facilitate quick testing or reproduction of results, we also provide **pretrained model weights**.
- You can find these weight files under the `weights/` directory.
+ These files are located in the `weights/` directory and can be directly loaded before running prediction.
 
+When you run the prediction script (e.g. `python predict.py --encoder DPGNNPAM`),
+ the program automatically loads the corresponding pretrained weights according to the selected encoder type.
+ If you have saved the pretrained weights in a different directory, please modify the file paths in the script accordingly (for example, update the lines loading `.pkl` files to match your own path).
 
-
-
+> 💡 **Note:** Make sure the weight filenames and encoder names are consistent, otherwise the model will fail to load correctly.
 

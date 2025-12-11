@@ -21,7 +21,7 @@ def predict_labels(args):
     if args.encoder == 'GAE':
         encoder = GAE(args)
 
-    if args.encoder == 'Random':
+    if args.encoder == 'DPGNNPAM':
         encoder = PathAgg_att_sample2(config)
 
     dist_encoder = dist_embed(args)
@@ -37,8 +37,8 @@ def predict_labels(args):
         encoder.load_state_dict(torch.load('encoder_gae.pkl'),strict=False)
         dist_encoder.load_state_dict(torch.load('dist_encoder_gae.pkl'),strict=False)
     else:
-        encoder.load_state_dict(torch.load('encoder_random.pkl'),strict=False)
-        dist_encoder.load_state_dict(torch.load('dist_encoder_random.pkl'),strict=False)
+        encoder.load_state_dict(torch.load('encoder_dpgnnpam.pkl'),strict=False)
+        dist_encoder.load_state_dict(torch.load('dist_encoder_dpgnnpam.pkl'),strict=False)
 
 
 
